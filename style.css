@@ -1,0 +1,242 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 50px;
+    background-color: rgba(43, 43, 41, 0.496);
+    border: 2px solid #fbfbf8;
+    top: 15px;
+    left: 25.1%;
+    width: 50%;
+    padding: 5px;
+    border-radius: 50px;
+    transition: .4s ease;
+}
+
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fbfbf830;
+    color: rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    padding: -100px;
+    font-size: .5rem;
+    transition: .6s ease;
+}
+
+body:not(.is-mobile) .navbar:hover {
+    gap: 75px;
+    left: 15.1%;
+    width: 70%;
+    padding: 10px;
+
+    background-color: #1f1e1ddf;
+    border: 2px solid #fbfbf8;
+    box-shadow: 2px 3px 5px #c1c19d, -2px -3px 5px #c1c19d;
+}
+body:not(.is-mobile) .navbar:hover a{
+    font-size: .8rem;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.676);
+}
+.navbar a:hover {
+    transition: .3s ease;
+    transform: scale(1.1);
+
+    background-color: rgba(65, 65, 60, 0.461);
+    box-shadow: 0px 3px 5px black;
+
+}
+
+.header{
+    position: relative;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    margin-top: 217px;
+    font-family: arial;
+}
+.header h1 {
+    font-size: 4.69rem;
+}
+.header h2 {
+    font-size: 3.28rem;
+}
+.header h3 {
+    font-size: 2.38rem;
+    margin-bottom: 500px;
+}
+.line {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 5px #f0f053, -2px -3px 5px #c1c19d;
+    padding: 1px;
+    margin-inline: 21.87%;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+section {
+    font-family: arial;
+}
+
+
+section h1 {
+    text-align: center;
+    background-color: rgba(129, 129, 129, 0.224);
+    padding: 35px;
+    width: 17.8%;
+    border-radius: 25px;
+    color: white;
+    margin-left: 150px;
+    font-size: 35px;    text-shadow: 2px 3px 5px #f0f0537b, -2px -3px 5px #f0f05386;
+}
+
+section p, ul{
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    width: 50%;
+    margin-left: 380px;
+    margin-bottom: 600px;
+}
+
+#cont h1{
+    margin-top: -400px;
+    margin-left: 38.5%;
+    margin-bottom: 50px;
+}
+
+.logos img{
+    width: 5%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+.facebook {
+     margin-left: 525px;
+}
+
+.mail {
+    margin-inline: 100px;
+}
+
+
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+.nav-toggle {
+        display: block;
+        background-color: #1f1e1ddf;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        margin-bottom: 10px;
+        position: fixed;
+        top: 1%;
+        z-index: 1001;
+    }
+
+    .navbar {
+        display: none;
+        background-color: rgba(43, 43, 41, 0.837);
+        gap: 10px;
+        top: 0;
+        left: 0;
+        width: 93%;
+        border-radius: 10px;
+        padding: 13px;
+
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        background-color: #1f1e1ddf;
+        color: white;
+        border-radius: 100px;
+        padding: 10px;
+        font-size: .6rem;
+    }
+
+    .header {
+        margin-top: 100px;
+    }
+    .header h1 {
+    font-size: 4rem;
+    }
+    .header h2 {
+        font-size: 3rem;
+    }
+    .header h3 {
+        font-size: 2rem;
+        margin-bottom: 500px;
+    }
+    .line {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 3px 5px #f0f053, -2px -3px 5px #c1c19d;
+        padding: 1px;
+        margin-inline: 5%;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    section h1{
+        font-size: 25px;
+        width: 75%;
+        margin-left: 10px;
+    }
+
+    section p, ul, li{
+        font-size: 1.5rem;
+        width: 85%;
+        margin-left: 23px;
+    }
+
+    #cont h1{
+        margin-top: -400px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+
+    .logos img{
+        width: 5%;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        height: 50px;
+        width: 50px;
+    }
+    .facebook {
+         margin-left: 50px;
+    }
+
+    .mail {
+        margin-inline: 50px;
+    }
+}
+
